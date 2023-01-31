@@ -18,3 +18,40 @@ Check for null and unique values for test and train sets.
 Apply label encoder.
 Perform dimensionality reduction.
 Predict your test_df values using XGBoost.
+
+Step1: Import the required libraries
+1.1: linear algebra
+
+1.2: data processing
+
+1.3: for dimensionality reduction
+
+Step2: Read the data from train.csv
+2.1: let us understand the data
+
+2.2: print few rows and see how the data looks like
+
+Step3: Collect the Y values into an array
+3.1: seperate the y from the data as we will use this to learn as the prediction output
+
+Step4: Understand the data types we have
+4.1:iterate through all the columns which has X in the name of the column
+
+Step5: Count the data in each of the columns
+
+Step6: Read the test.csv data
+6.1: remove columns ID and Y from the data as they are not used for learning
+
+Step7: Check for null and unique values for test and train sets
+
+Step8: If for any column(s), the variance is equal to zero, then you need to remove those variable(s).
+8.1: Apply label encoder
+
+Step9: Make sure the data is now changed into numericals
+
+Step10: Perform dimensionality reduction
+10.1: Linear dimensionality reduction using Singular Value Decomposition of the data to project it to a lower dimensional space.
+
+Step11: Training using xgboost
+
+Step12: Predict your test_df values using xgboost
