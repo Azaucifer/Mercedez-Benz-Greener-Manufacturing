@@ -54,4 +54,10 @@ Step10: Perform dimensionality reduction
 
 Step11: Training using xgboost
 
-Step12: Predict your test_df values using xgboost
+Step12: Predict your test_df values using xgboost.
+
+Conclusion :-
+We can see that we got a larger RMSE for the testing. This suggest the model did
+not do well on the testing set. A better way would be to use the Cross Validation method of 
+XGBoost to help identify the features that will yield a better training RMSE. We then use the
+model with a better RMSE to predict.
