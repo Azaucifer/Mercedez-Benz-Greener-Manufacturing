@@ -1,63 +1,66 @@
-# Mercedez-Benz-Greener-Manufacturing
+# Mercedes-Benz Greener Manufacturing
 
-DESCRIPTION
+## Description
 
-Reduce the time a Mercedes-Benz spends on the test bench.
+### Problem Statement Scenario
 
-Problem Statement Scenario:
-Since the first automobile, the Benz Patent Motor Car in 1886, Mercedes-Benz has stood for important automotive innovations. These include the passenger safety cell with a crumple zone, the airbag, and intelligent assistance systems. Mercedes-Benz applies for nearly 2000 patents per year, making the brand the European leader among premium carmakers. Mercedes-Benz is the leader in the premium car industry. With a huge selection of features and options, customers can choose the customized Mercedes-Benz of their dreams.
+Mercedes-Benz, known for its legacy of automotive innovation, applies for nearly 2000 patents per year, making it a leader in the premium car industry. Offering a wide range of features and options, customers can personalize their dream Mercedes-Benz vehicle. To ensure the safety and reliability of each unique car configuration, the company has developed a robust testing system.
 
-To ensure the safety and reliability of every unique car configuration before they hit the road, the company’s engineers have developed a robust testing system. As one of the world’s biggest manufacturers of premium cars, safety and efficiency are paramount on Mercedes-Benz’s production lines. However, optimizing the speed of their testing system for many possible feature combinations is complex and time-consuming without a powerful algorithmic approach.
+As a major manufacturer of premium cars, Mercedes-Benz places a strong emphasis on safety and efficiency in its production lines. Optimizing the testing system's speed for numerous feature combinations is a complex and time-consuming task without a powerful algorithmic approach.
 
-You are required to reduce the time that cars spend on the test bench. Others will work with a dataset representing different permutations of features in a Mercedes-Benz car to predict the time it takes to pass testing. Optimal algorithms will contribute to faster testing, resulting in lower carbon dioxide emissions without reducing Mercedes-Benz’s standards.
+The challenge is to reduce the time cars spend on the test bench, ultimately contributing to faster testing, lower carbon dioxide emissions, and maintaining Mercedes-Benz's high standards.
 
-Following actions should be performed:
+### Actions to Be Performed
 
-If for any column(s), the variance is equal to zero, then you need to remove those variable(s).
-Check for null and unique values for test and train sets.
-Apply label encoder.
-Perform dimensionality reduction.
-Predict your test_df values using XGBoost.
+To address this challenge, the following actions are to be performed:
 
-Step1: Import the required libraries
-1.1: linear algebra
+1. Remove columns with zero variance.
+2. Check for null and unique values in both test and train datasets.
+3. Apply label encoding to handle categorical data.
+4. Perform dimensionality reduction.
+5. Predict test values using XGBoost.
 
-1.2: data processing
+### Steps Involved
 
-1.3: for dimensionality reduction
+Here's a breakdown of the steps involved in this project:
 
-Step2: Read the data from train.csv
-2.1: let us understand the data
+**Step 1: Import Required Libraries**
+- Import necessary libraries for data processing and dimensionality reduction.
 
-2.2: print few rows and see how the data looks like
+**Step 2: Read the Data from train.csv**
+- Understand and inspect the data by printing a few rows.
 
-Step3: Collect the Y values into an array
-3.1: seperate the y from the data as we will use this to learn as the prediction output
+**Step 3: Collect the Target Values (Y)**
+- Separate the target values (Y) from the data for prediction.
 
-Step4: Understand the data types we have
-4.1:iterate through all the columns which has X in the name of the column
+**Step 4: Understand Data Types**
+- Iterate through columns with "X" in the name to understand data types.
 
-Step5: Count the data in each of the columns
+**Step 5: Count Data in Columns**
 
-Step6: Read the test.csv data
-6.1: remove columns ID and Y from the data as they are not used for learning
+**Step 6: Read the test.csv Data**
+- Remove unused columns (ID and Y).
 
-Step7: Check for null and unique values for test and train sets
+**Step 7: Check for Null and Unique Values**
 
-Step8: If for any column(s), the variance is equal to zero, then you need to remove those variable(s).
-8.1: Apply label encoder
+**Step 8: Remove Columns with Zero Variance**
 
-Step9: Make sure the data is now changed into numericals
+**Step 9: Apply Label Encoder**
+- Convert categorical data into numerical format.
 
-Step10: Perform dimensionality reduction
-10.1: Linear dimensionality reduction using Singular Value Decomposition of the data to project it to a lower dimensional space.
+**Step 10: Ensure Data is Numerical**
+- Confirm that the data is now in numerical format.
 
-Step11: Training using xgboost
+**Step 11: Perform Dimensionality Reduction**
+- Utilize Singular Value Decomposition (SVD) to project data into a lower-dimensional space.
 
-Step12: Predict your test_df values using xgboost.
+**Step 12: Training Using XGBoost**
+- Train the model using XGBoost.
 
-Conclusion :-
-We can see that we got a larger RMSE for the testing. This suggest the model did
-not do well on the testing set. A better way would be to use the Cross Validation method of 
-XGBoost to help identify the features that will yield a better training RMSE. We then use the
-model with a better RMSE to predict.
+**Step 13: Predict Test Values Using XGBoost**
+
+### Conclusion
+
+The analysis revealed a larger Root Mean Squared Error (RMSE) for the testing set, indicating that the initial model did not perform well. To improve model performance, it is recommended to use Cross Validation with XGBoost to identify features that yield a better training RMSE. The model with better performance on the training data can then be used for prediction.
+
+This project aims to optimize Mercedes-Benz's testing system, ultimately contributing to greener manufacturing practices and maintaining the brand's high standards of safety and efficiency.
