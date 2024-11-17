@@ -1,8 +1,8 @@
-# Mercedes-Benz Greener Manufacturing
+# 🏎 Mercedes-Benz Greener Manufacturing
 
-## Description
+## 📋 Description
 
-### Problem Statement Scenario
+### 📜 Problem Statement Scenario
 
 Mercedes-Benz, known for its legacy of automotive innovation, applies for nearly 2000 patents per year, making it a leader in the premium car industry. Offering a wide range of features and options, customers can personalize their dream Mercedes-Benz vehicle. To ensure the safety and reliability of each unique car configuration, the company has developed a robust testing system.
 
@@ -10,7 +10,7 @@ As a major manufacturer of premium cars, Mercedes-Benz places a strong emphasis 
 
 The challenge is to reduce the time cars spend on the test bench, ultimately contributing to faster testing, lower carbon dioxide emissions, and maintaining Mercedes-Benz's high standards.
 
-### Actions to Be Performed
+### 📒 Actions to Be Performed
 
 To address this challenge, the following actions are to be performed:
 
@@ -20,7 +20,7 @@ To address this challenge, the following actions are to be performed:
 4. Perform dimensionality reduction.
 5. Predict test values using XGBoost.
 
-### Steps Involved
+### 🧮 Steps Involved
 
 Here's a breakdown of the steps involved in this project:
 
@@ -59,7 +59,7 @@ Here's a breakdown of the steps involved in this project:
 
 **Step 13: Predict Test Values Using XGBoost**
 
-### Conclusion
+### 📎 Conclusion
 
 The analysis revealed a larger Root Mean Squared Error (RMSE) for the testing set, indicating that the initial model did not perform well. To improve model performance, it is recommended to use Cross Validation with XGBoost to identify features that yield a better training RMSE. The model with better performance on the training data can then be used for prediction.
 
